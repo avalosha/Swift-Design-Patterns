@@ -15,6 +15,11 @@
 		C0BE88C5251DA2E900B02D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BE88C3251DA2E900B02D27 /* LaunchScreen.storyboard */; };
 		C0BE88D0251DA2E900B02D27 /* DesignPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE88CF251DA2E900B02D27 /* DesignPatternsTests.swift */; };
 		C0BE88DB251DA2EA00B02D27 /* DesignPatternsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE88DA251DA2EA00B02D27 /* DesignPatternsUITests.swift */; };
+		C0BE88EE251DA72400B02D27 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE88ED251DA72400B02D27 /* Payment.swift */; };
+		C0BE88F6251DA75000B02D27 /* GooglePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE88F5251DA75000B02D27 /* GooglePayment.swift */; };
+		C0BE88FB251DA79700B02D27 /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE88FA251DA79700B02D27 /* CardPayment.swift */; };
+		C0BE8900251DA7D600B02D27 /* TypePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE88FF251DA7D600B02D27 /* TypePayment.swift */; };
+		C0BE8905251DA83200B02D27 /* PaymentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8904251DA83200B02D27 /* PaymentFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		C0BE88D6251DA2E900B02D27 /* DesignPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BE88DA251DA2EA00B02D27 /* DesignPatternsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsUITests.swift; sourceTree = "<group>"; };
 		C0BE88DC251DA2EA00B02D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0BE88ED251DA72400B02D27 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		C0BE88F5251DA75000B02D27 /* GooglePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePayment.swift; sourceTree = "<group>"; };
+		C0BE88FA251DA79700B02D27 /* CardPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
+		C0BE88FF251DA7D600B02D27 /* TypePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePayment.swift; sourceTree = "<group>"; };
+		C0BE8904251DA83200B02D27 /* PaymentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		C0BE88B7251DA2D500B02D27 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				C0BE88EB251DA66600B02D27 /* Creational */,
 				C0BE88B8251DA2D500B02D27 /* AppDelegate.swift */,
 				C0BE88BA251DA2D500B02D27 /* SceneDelegate.swift */,
 				C0BE88BC251DA2D500B02D27 /* ViewController.swift */,
@@ -126,6 +137,26 @@
 				C0BE88DC251DA2EA00B02D27 /* Info.plist */,
 			);
 			path = DesignPatternsUITests;
+			sourceTree = "<group>";
+		};
+		C0BE88EB251DA66600B02D27 /* Creational */ = {
+			isa = PBXGroup;
+			children = (
+				C0BE88EC251DA68500B02D27 /* FactoryMethod */,
+			);
+			path = Creational;
+			sourceTree = "<group>";
+		};
+		C0BE88EC251DA68500B02D27 /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				C0BE88ED251DA72400B02D27 /* Payment.swift */,
+				C0BE88F5251DA75000B02D27 /* GooglePayment.swift */,
+				C0BE88FA251DA79700B02D27 /* CardPayment.swift */,
+				C0BE88FF251DA7D600B02D27 /* TypePayment.swift */,
+				C0BE8904251DA83200B02D27 /* PaymentFactory.swift */,
+			);
+			path = FactoryMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +291,11 @@
 			files = (
 				C0BE88BD251DA2D500B02D27 /* ViewController.swift in Sources */,
 				C0BE88B9251DA2D500B02D27 /* AppDelegate.swift in Sources */,
+				C0BE8900251DA7D600B02D27 /* TypePayment.swift in Sources */,
+				C0BE88FB251DA79700B02D27 /* CardPayment.swift in Sources */,
+				C0BE88F6251DA75000B02D27 /* GooglePayment.swift in Sources */,
+				C0BE8905251DA83200B02D27 /* PaymentFactory.swift in Sources */,
+				C0BE88EE251DA72400B02D27 /* Payment.swift in Sources */,
 				C0BE88BB251DA2D500B02D27 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
