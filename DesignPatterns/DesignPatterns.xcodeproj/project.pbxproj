@@ -20,6 +20,16 @@
 		C0BE88FB251DA79700B02D27 /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE88FA251DA79700B02D27 /* CardPayment.swift */; };
 		C0BE8900251DA7D600B02D27 /* TypePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE88FF251DA7D600B02D27 /* TypePayment.swift */; };
 		C0BE8905251DA83200B02D27 /* PaymentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8904251DA83200B02D27 /* PaymentFactory.swift */; };
+		C0BE890B251EB27000B02D27 /* PaymentAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE890A251EB27000B02D27 /* PaymentAF.swift */; };
+		C0BE8913251EC2EE00B02D27 /* CardPaymentAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8912251EC2EE00B02D27 /* CardPaymentAF.swift */; };
+		C0BE8918251EC34800B02D27 /* GooglePaymentAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8917251EC34800B02D27 /* GooglePaymentAF.swift */; };
+		C0BE891D251EC38700B02D27 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE891C251EC38700B02D27 /* Method.swift */; };
+		C0BE8922251EC3C200B02D27 /* MontlyMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8921251EC3C200B02D27 /* MontlyMethod.swift */; };
+		C0BE8927251EC41C00B02D27 /* PaymentInAdvanceMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8926251EC41C00B02D27 /* PaymentInAdvanceMethod.swift */; };
+		C0BE892C251EC4B800B02D27 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE892B251EC4B800B02D27 /* AbstractFactory.swift */; };
+		C0BE8931251EC50D00B02D27 /* PaymentInAdvanceCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8930251EC50D00B02D27 /* PaymentInAdvanceCardFactory.swift */; };
+		C0BE8936251EC59400B02D27 /* MontlyGoogleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8935251EC59400B02D27 /* MontlyGoogleFactory.swift */; };
+		C0BE893B251EC60700B02D27 /* PaymentMethodClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE893A251EC60700B02D27 /* PaymentMethodClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +69,16 @@
 		C0BE88FA251DA79700B02D27 /* CardPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
 		C0BE88FF251DA7D600B02D27 /* TypePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePayment.swift; sourceTree = "<group>"; };
 		C0BE8904251DA83200B02D27 /* PaymentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFactory.swift; sourceTree = "<group>"; };
+		C0BE890A251EB27000B02D27 /* PaymentAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAF.swift; sourceTree = "<group>"; };
+		C0BE8912251EC2EE00B02D27 /* CardPaymentAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentAF.swift; sourceTree = "<group>"; };
+		C0BE8917251EC34800B02D27 /* GooglePaymentAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePaymentAF.swift; sourceTree = "<group>"; };
+		C0BE891C251EC38700B02D27 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		C0BE8921251EC3C200B02D27 /* MontlyMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontlyMethod.swift; sourceTree = "<group>"; };
+		C0BE8926251EC41C00B02D27 /* PaymentInAdvanceMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInAdvanceMethod.swift; sourceTree = "<group>"; };
+		C0BE892B251EC4B800B02D27 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		C0BE8930251EC50D00B02D27 /* PaymentInAdvanceCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInAdvanceCardFactory.swift; sourceTree = "<group>"; };
+		C0BE8935251EC59400B02D27 /* MontlyGoogleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontlyGoogleFactory.swift; sourceTree = "<group>"; };
+		C0BE893A251EC60700B02D27 /* PaymentMethodClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +162,7 @@
 		C0BE88EB251DA66600B02D27 /* Creational */ = {
 			isa = PBXGroup;
 			children = (
+				C0BE8909251EB21500B02D27 /* AbstractFactoryMethod */,
 				C0BE88EC251DA68500B02D27 /* FactoryMethod */,
 			);
 			path = Creational;
@@ -157,6 +178,23 @@
 				C0BE8904251DA83200B02D27 /* PaymentFactory.swift */,
 			);
 			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		C0BE8909251EB21500B02D27 /* AbstractFactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				C0BE890A251EB27000B02D27 /* PaymentAF.swift */,
+				C0BE8912251EC2EE00B02D27 /* CardPaymentAF.swift */,
+				C0BE8917251EC34800B02D27 /* GooglePaymentAF.swift */,
+				C0BE891C251EC38700B02D27 /* Method.swift */,
+				C0BE8921251EC3C200B02D27 /* MontlyMethod.swift */,
+				C0BE8926251EC41C00B02D27 /* PaymentInAdvanceMethod.swift */,
+				C0BE892B251EC4B800B02D27 /* AbstractFactory.swift */,
+				C0BE8930251EC50D00B02D27 /* PaymentInAdvanceCardFactory.swift */,
+				C0BE8935251EC59400B02D27 /* MontlyGoogleFactory.swift */,
+				C0BE893A251EC60700B02D27 /* PaymentMethodClient.swift */,
+			);
+			path = AbstractFactoryMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,14 +327,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BE893B251EC60700B02D27 /* PaymentMethodClient.swift in Sources */,
 				C0BE88BD251DA2D500B02D27 /* ViewController.swift in Sources */,
 				C0BE88B9251DA2D500B02D27 /* AppDelegate.swift in Sources */,
 				C0BE8900251DA7D600B02D27 /* TypePayment.swift in Sources */,
+				C0BE8927251EC41C00B02D27 /* PaymentInAdvanceMethod.swift in Sources */,
 				C0BE88FB251DA79700B02D27 /* CardPayment.swift in Sources */,
+				C0BE8918251EC34800B02D27 /* GooglePaymentAF.swift in Sources */,
 				C0BE88F6251DA75000B02D27 /* GooglePayment.swift in Sources */,
 				C0BE8905251DA83200B02D27 /* PaymentFactory.swift in Sources */,
 				C0BE88EE251DA72400B02D27 /* Payment.swift in Sources */,
+				C0BE891D251EC38700B02D27 /* Method.swift in Sources */,
+				C0BE8913251EC2EE00B02D27 /* CardPaymentAF.swift in Sources */,
+				C0BE8922251EC3C200B02D27 /* MontlyMethod.swift in Sources */,
+				C0BE892C251EC4B800B02D27 /* AbstractFactory.swift in Sources */,
+				C0BE8936251EC59400B02D27 /* MontlyGoogleFactory.swift in Sources */,
+				C0BE890B251EB27000B02D27 /* PaymentAF.swift in Sources */,
 				C0BE88BB251DA2D500B02D27 /* SceneDelegate.swift in Sources */,
+				C0BE8931251EC50D00B02D27 /* PaymentInAdvanceCardFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
