@@ -30,6 +30,7 @@
 		C0BE8931251EC50D00B02D27 /* PaymentInAdvanceCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8930251EC50D00B02D27 /* PaymentInAdvanceCardFactory.swift */; };
 		C0BE8936251EC59400B02D27 /* MontlyGoogleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8935251EC59400B02D27 /* MontlyGoogleFactory.swift */; };
 		C0BE893B251EC60700B02D27 /* PaymentMethodClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE893A251EC60700B02D27 /* PaymentMethodClient.swift */; };
+		C0BE8941251EE52500B02D27 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE8940251EE52500B02D27 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		C0BE8930251EC50D00B02D27 /* PaymentInAdvanceCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInAdvanceCardFactory.swift; sourceTree = "<group>"; };
 		C0BE8935251EC59400B02D27 /* MontlyGoogleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontlyGoogleFactory.swift; sourceTree = "<group>"; };
 		C0BE893A251EC60700B02D27 /* PaymentMethodClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodClient.swift; sourceTree = "<group>"; };
+		C0BE8940251EE52500B02D27 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		C0BE88EB251DA66600B02D27 /* Creational */ = {
 			isa = PBXGroup;
 			children = (
+				C0BE893F251EE47F00B02D27 /* BuilderMethod */,
 				C0BE8909251EB21500B02D27 /* AbstractFactoryMethod */,
 				C0BE88EC251DA68500B02D27 /* FactoryMethod */,
 			);
@@ -195,6 +198,14 @@
 				C0BE893A251EC60700B02D27 /* PaymentMethodClient.swift */,
 			);
 			path = AbstractFactoryMethod;
+			sourceTree = "<group>";
+		};
+		C0BE893F251EE47F00B02D27 /* BuilderMethod */ = {
+			isa = PBXGroup;
+			children = (
+				C0BE8940251EE52500B02D27 /* Card.swift */,
+			);
+			path = BuilderMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +340,7 @@
 			files = (
 				C0BE893B251EC60700B02D27 /* PaymentMethodClient.swift in Sources */,
 				C0BE88BD251DA2D500B02D27 /* ViewController.swift in Sources */,
+				C0BE8941251EE52500B02D27 /* Card.swift in Sources */,
 				C0BE88B9251DA2D500B02D27 /* AppDelegate.swift in Sources */,
 				C0BE8900251DA7D600B02D27 /* TypePayment.swift in Sources */,
 				C0BE8927251EC41C00B02D27 /* PaymentInAdvanceMethod.swift in Sources */,
