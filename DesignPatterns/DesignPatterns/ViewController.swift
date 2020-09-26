@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         
         //testFactoryMethod()
         //testAbstractFactoryMethod()
-        testBuilderMethod()
+        //testBuilderMethod()
+        testPrototype()
     }
 
     func testFactoryMethod() {
@@ -41,6 +42,18 @@ class ViewController: UIViewController {
             .expires(expires: 2030)
             .build()
         cardTwo.showCard()
+    }
+    
+    func testPrototype() {
+        let original = VisaCard(cardNumber: 1111, cardType: "Credit")
+        guard let copy = original.copy() as? VisaCard else {
+            return
+        }
+        print(original.cardName)
+        print(copy.cardName)
+        
+        print(original.cardNumber)
+        print(copy.cardNumber)
     }
 }
 
