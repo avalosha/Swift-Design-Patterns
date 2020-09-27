@@ -17,8 +17,12 @@ class ViewController: UIViewController {
         //testAbstractFactoryMethod()
         //testBuilderMethod()
         //testPrototype()
-        testSingleton()
+        //testSingleton()
+        
+        testChainOfResponsability()
     }
+    
+    // MARK:- Creational Patterns
 
     func testFactoryMethod() {
         var payment: Payment
@@ -66,6 +70,13 @@ class ViewController: UIViewController {
         }
         
         instancia1.doSomething()
+    }
+    
+    //MARK:- Behavioral Patters
+    
+    func testChainOfResponsability() {
+        let bank = BankHandler()
+        bank.creditCardRequest(totalLoan: 3000)
     }
 }
 
