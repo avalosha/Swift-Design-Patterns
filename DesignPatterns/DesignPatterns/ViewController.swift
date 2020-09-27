@@ -16,7 +16,8 @@ class ViewController: UIViewController {
         //testFactoryMethod()
         //testAbstractFactoryMethod()
         //testBuilderMethod()
-        testPrototype()
+        //testPrototype()
+        testSingleton()
     }
 
     func testFactoryMethod() {
@@ -54,6 +55,17 @@ class ViewController: UIViewController {
         
         print(original.cardNumber)
         print(copy.cardNumber)
+    }
+    
+    func testSingleton() {
+        let instancia1 = CardSingleton.shared
+        let instancia2 = CardSingleton.shared
+        
+        if instancia1 === instancia2 {
+            print("La 1 es igual que la 2")
+        }
+        
+        instancia1.doSomething()
     }
 }
 
