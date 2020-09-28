@@ -11,15 +11,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+        ///Creational Patterns
         //testFactoryMethod()
         //testAbstractFactoryMethod()
         //testBuilderMethod()
         //testPrototype()
         //testSingleton()
         
-        testChainOfResponsability()
+        ///Behavioral Patterns
+        //testChainOfResponsability()
+        testStrategy()
     }
     
     // MARK:- Creational Patterns
@@ -77,6 +78,14 @@ class ViewController: UIViewController {
     func testChainOfResponsability() {
         let bank = BankHandler()
         bank.creditCardRequest(totalLoan: 3000)
+    }
+    
+    func testStrategy() {
+        var context = Context(strategyTextFormatter: CapitalStrategyTextFormatter())
+        context.publishText(text: "ejemplo en mayusculas")
+        
+        context = Context(strategyTextFormatter: LowerStrategyTextFormatter())
+        context.publishText(text: "ejemplo en minusculas")
     }
 }
 
