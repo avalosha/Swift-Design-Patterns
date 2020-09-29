@@ -52,6 +52,11 @@
 		C0E7C6C92522D5FD00CBDF61 /* CreditDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6C82522D5FD00CBDF61 /* CreditDecorator.swift */; };
 		C0E7C6CE2522D6F400CBDF61 /* InternationalPaymentDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6CD2522D6F400CBDF61 /* InternationalPaymentDecorator.swift */; };
 		C0E7C6D32522D81400CBDF61 /* SecureDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6D22522D81400CBDF61 /* SecureDecorator.swift */; };
+		C0E7C6E22522E26100CBDF61 /* CreditModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6E12522E26100CBDF61 /* CreditModule.swift */; };
+		C0E7C6EA2522E30900CBDF61 /* BlackModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6E92522E30900CBDF61 /* BlackModule.swift */; };
+		C0E7C6EF2522E31600CBDF61 /* GoldModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6EE2522E31600CBDF61 /* GoldModule.swift */; };
+		C0E7C6F42522E32200CBDF61 /* SilverModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6F32522E32200CBDF61 /* SilverModule.swift */; };
+		C0E7C6F92522E34700CBDF61 /* CreditMarketFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6F82522E34700CBDF61 /* CreditMarketFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +128,11 @@
 		C0E7C6C82522D5FD00CBDF61 /* CreditDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditDecorator.swift; sourceTree = "<group>"; };
 		C0E7C6CD2522D6F400CBDF61 /* InternationalPaymentDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalPaymentDecorator.swift; sourceTree = "<group>"; };
 		C0E7C6D22522D81400CBDF61 /* SecureDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDecorator.swift; sourceTree = "<group>"; };
+		C0E7C6E12522E26100CBDF61 /* CreditModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditModule.swift; sourceTree = "<group>"; };
+		C0E7C6E92522E30900CBDF61 /* BlackModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackModule.swift; sourceTree = "<group>"; };
+		C0E7C6EE2522E31600CBDF61 /* GoldModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldModule.swift; sourceTree = "<group>"; };
+		C0E7C6F32522E32200CBDF61 /* SilverModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverModule.swift; sourceTree = "<group>"; };
+		C0E7C6F82522E34700CBDF61 /* CreditMarketFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditMarketFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +316,7 @@
 		C0E7C6A72522B84600CBDF61 /* Structural */ = {
 			isa = PBXGroup;
 			children = (
+				C0E7C6E02522E24500CBDF61 /* Facade */,
 				C0E7C6B82522D3EF00CBDF61 /* Decorator */,
 				C0E7C6A82522B85B00CBDF61 /* Adapter */,
 			);
@@ -334,6 +345,18 @@
 				C0E7C6D22522D81400CBDF61 /* SecureDecorator.swift */,
 			);
 			path = Decorator;
+			sourceTree = "<group>";
+		};
+		C0E7C6E02522E24500CBDF61 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				C0E7C6E12522E26100CBDF61 /* CreditModule.swift */,
+				C0E7C6E92522E30900CBDF61 /* BlackModule.swift */,
+				C0E7C6EE2522E31600CBDF61 /* GoldModule.swift */,
+				C0E7C6F32522E32200CBDF61 /* SilverModule.swift */,
+				C0E7C6F82522E34700CBDF61 /* CreditMarketFacade.swift */,
+			);
+			path = Facade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,22 +491,26 @@
 			files = (
 				C0E7C6C42522D5AF00CBDF61 /* GoldCreditComponent.swift in Sources */,
 				C0E7C6AF2522BD0500CBDF61 /* OperationAdaptee.swift in Sources */,
+				C0E7C6EF2522E31600CBDF61 /* GoldModule.swift in Sources */,
 				C0BE8974252147A000B02D27 /* BlackHandler.swift in Sources */,
 				C0BE893B251EC60700B02D27 /* PaymentMethodClient.swift in Sources */,
 				C0BE88BD251DA2D500B02D27 /* ViewController.swift in Sources */,
 				C0BE894F251FF02900B02D27 /* VisaCard.swift in Sources */,
 				C0BE896F2521475500B02D27 /* PlatiniumHandler.swift in Sources */,
+				C0E7C6EA2522E30900CBDF61 /* BlackModule.swift in Sources */,
 				C0BE89872521718F00B02D27 /* CapitalStrategyTextFormatter.swift in Sources */,
 				C0BE89912521722B00B02D27 /* Context.swift in Sources */,
 				C0BE8941251EE52500B02D27 /* Card.swift in Sources */,
 				C0E7C6AA2522BBEC00CBDF61 /* OperationTarget.swift in Sources */,
 				C0BE88B9251DA2D500B02D27 /* AppDelegate.swift in Sources */,
 				C0BE898C252171F500B02D27 /* LowerStrategyTextFormatter.swift in Sources */,
+				C0E7C6F92522E34700CBDF61 /* CreditMarketFacade.swift in Sources */,
 				C0BE8900251DA7D600B02D27 /* TypePayment.swift in Sources */,
 				C0BE8927251EC41C00B02D27 /* PaymentInAdvanceMethod.swift in Sources */,
 				C0BE8947251FEEE700B02D27 /* PrototypeCard.swift in Sources */,
 				C0BE896A2521464200B02D27 /* GoldHandler.swift in Sources */,
 				C0E7C6BF2522D53500CBDF61 /* BlackCreditComponent.swift in Sources */,
+				C0E7C6F42522E32200CBDF61 /* SilverModule.swift in Sources */,
 				C0E7C6D32522D81400CBDF61 /* SecureDecorator.swift in Sources */,
 				C0BE88FB251DA79700B02D27 /* CardPayment.swift in Sources */,
 				C0BE8918251EC34800B02D27 /* GooglePaymentAF.swift in Sources */,
@@ -501,6 +528,7 @@
 				C0BE8936251EC59400B02D27 /* MontlyGoogleFactory.swift in Sources */,
 				C0BE890B251EB27000B02D27 /* PaymentAF.swift in Sources */,
 				C0BE89622521450100B02D27 /* ApprovedLoanHandler.swift in Sources */,
+				C0E7C6E22522E26100CBDF61 /* CreditModule.swift in Sources */,
 				C0BE88BB251DA2D500B02D27 /* SceneDelegate.swift in Sources */,
 				C0BE8931251EC50D00B02D27 /* PaymentInAdvanceCardFactory.swift in Sources */,
 				C0BE895B251FFBBC00B02D27 /* CardSingleton.swift in Sources */,

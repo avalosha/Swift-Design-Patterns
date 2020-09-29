@@ -24,7 +24,8 @@ class ViewController: UIViewController {
         
         ///Structural Patterns
         //testAdapter()
-        testDecorator()
+        //testDecorator()
+        testFacade()
     }
     
     // MARK:- Creational Patterns
@@ -114,6 +115,13 @@ class ViewController: UIViewController {
         print("-------Tarjeta Gold Configurada------")
         goldSecurePayment.showCredit()
         
+    }
+    
+    func testFacade() {
+        let facade = CreditMarketFacade()
+        facade.showCreditBlack()
+        facade.showCreditGold()
+        facade.showCreditSilver()
     }
 }
 
