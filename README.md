@@ -10,5 +10,15 @@ With the advantage of having a well structured code, it allows projects to have 
 For this, it is necessary to know the different design patterns that exist, since not all of them work for everything. So here you will find different design patterns used with Swift, divided into:
 
 * Creative
+  - Factory
+  - Abstract Factory
+  - Builder
+  - Prototype
+  - Singleton
 * Structural
+  - Adapter
+  - Decorator
+  - Facade
 * Behavior
+  - Chain of Responsibility
+  - Strategy
