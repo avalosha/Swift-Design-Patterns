@@ -23,7 +23,8 @@ class ViewController: UIViewController {
         //testStrategy()
         
         ///Structural Patterns
-        testAdapter()
+        //testAdapter()
+        testDecorator()
     }
     
     // MARK:- Creational Patterns
@@ -102,6 +103,17 @@ class ViewController: UIViewController {
         if target.getSum == "7" {
             print("Ok String: \(target.getSum)")
         }
+    }
+    
+    func testDecorator() {
+        let blackInternationalPayment = InternationalPaymentDecorator(decorated: BlackCreditComponent())
+        print("-------Tarjeta Black Configurada------")
+        blackInternationalPayment.showCredit()
+        print("\n")
+        let goldSecurePayment = SecureDecorator(decorated: GoldCreditComponent())
+        print("-------Tarjeta Gold Configurada------")
+        goldSecurePayment.showCredit()
+        
     }
 }
 
