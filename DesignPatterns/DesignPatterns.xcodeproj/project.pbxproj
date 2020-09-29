@@ -43,6 +43,9 @@
 		C0BE89872521718F00B02D27 /* CapitalStrategyTextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE89862521718F00B02D27 /* CapitalStrategyTextFormatter.swift */; };
 		C0BE898C252171F500B02D27 /* LowerStrategyTextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE898B252171F500B02D27 /* LowerStrategyTextFormatter.swift */; };
 		C0BE89912521722B00B02D27 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BE89902521722B00B02D27 /* Context.swift */; };
+		C0E7C6AA2522BBEC00CBDF61 /* OperationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6A92522BBEC00CBDF61 /* OperationTarget.swift */; };
+		C0E7C6AF2522BD0500CBDF61 /* OperationAdaptee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6AE2522BD0500CBDF61 /* OperationAdaptee.swift */; };
+		C0E7C6B42522BDE600CBDF61 /* OperationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E7C6B32522BDE600CBDF61 /* OperationAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,9 @@
 		C0BE89862521718F00B02D27 /* CapitalStrategyTextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalStrategyTextFormatter.swift; sourceTree = "<group>"; };
 		C0BE898B252171F500B02D27 /* LowerStrategyTextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerStrategyTextFormatter.swift; sourceTree = "<group>"; };
 		C0BE89902521722B00B02D27 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		C0E7C6A92522BBEC00CBDF61 /* OperationTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationTarget.swift; sourceTree = "<group>"; };
+		C0E7C6AE2522BD0500CBDF61 /* OperationAdaptee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationAdaptee.swift; sourceTree = "<group>"; };
+		C0E7C6B32522BDE600CBDF61 /* OperationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,7 @@
 		C0BE88B7251DA2D500B02D27 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				C0E7C6A72522B84600CBDF61 /* Structural */,
 				C0BE895F2521445300B02D27 /* Behavioral */,
 				C0BE88EB251DA66600B02D27 /* Creational */,
 				C0BE88B8251DA2D500B02D27 /* AppDelegate.swift */,
@@ -282,6 +289,25 @@
 				C0BE89902521722B00B02D27 /* Context.swift */,
 			);
 			path = Strategy;
+			sourceTree = "<group>";
+		};
+		C0E7C6A72522B84600CBDF61 /* Structural */ = {
+			isa = PBXGroup;
+			children = (
+				C0E7C6A82522B85B00CBDF61 /* Adapter */,
+			);
+			path = Structural;
+			sourceTree = "<group>";
+		};
+		C0E7C6A82522B85B00CBDF61 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				C0E7C6A92522BBEC00CBDF61 /* OperationTarget.swift */,
+				C0E7C6AE2522BD0500CBDF61 /* OperationAdaptee.swift */,
+				C0E7C6B32522BDE600CBDF61 /* OperationAdapter.swift */,
+			);
+			name = Adapter;
+			path = "../New Group/Adapter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E7C6AF2522BD0500CBDF61 /* OperationAdaptee.swift in Sources */,
 				C0BE8974252147A000B02D27 /* BlackHandler.swift in Sources */,
 				C0BE893B251EC60700B02D27 /* PaymentMethodClient.swift in Sources */,
 				C0BE88BD251DA2D500B02D27 /* ViewController.swift in Sources */,
@@ -422,6 +449,7 @@
 				C0BE89872521718F00B02D27 /* CapitalStrategyTextFormatter.swift in Sources */,
 				C0BE89912521722B00B02D27 /* Context.swift in Sources */,
 				C0BE8941251EE52500B02D27 /* Card.swift in Sources */,
+				C0E7C6AA2522BBEC00CBDF61 /* OperationTarget.swift in Sources */,
 				C0BE88B9251DA2D500B02D27 /* AppDelegate.swift in Sources */,
 				C0BE898C252171F500B02D27 /* LowerStrategyTextFormatter.swift in Sources */,
 				C0BE8900251DA7D600B02D27 /* TypePayment.swift in Sources */,
@@ -431,6 +459,7 @@
 				C0BE88FB251DA79700B02D27 /* CardPayment.swift in Sources */,
 				C0BE8918251EC34800B02D27 /* GooglePaymentAF.swift in Sources */,
 				C0BE88F6251DA75000B02D27 /* GooglePayment.swift in Sources */,
+				C0E7C6B42522BDE600CBDF61 /* OperationAdapter.swift in Sources */,
 				C0BE8905251DA83200B02D27 /* PaymentFactory.swift in Sources */,
 				C0BE88EE251DA72400B02D27 /* Payment.swift in Sources */,
 				C0BE891D251EC38700B02D27 /* Method.swift in Sources */,

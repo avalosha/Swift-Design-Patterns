@@ -20,7 +20,10 @@ class ViewController: UIViewController {
         
         ///Behavioral Patterns
         //testChainOfResponsability()
-        testStrategy()
+        //testStrategy()
+        
+        ///Structural Patterns
+        testAdapter()
     }
     
     // MARK:- Creational Patterns
@@ -86,6 +89,19 @@ class ViewController: UIViewController {
         
         context = Context(strategyTextFormatter: LowerStrategyTextFormatter())
         context.publishText(text: "ejemplo en minusculas")
+    }
+    
+    //MARK:- Structural Patters
+    
+    func testAdapter() {
+        let adaptee = OperationAdaptee(a: 3, b: 4)
+        if adaptee.sum() == 7 {
+            print("Ok Int: \(adaptee.sum())")
+        }
+        let target = OperationAdapter(adaptee: adaptee)
+        if target.getSum == "7" {
+            print("Ok String: \(target.getSum)")
+        }
     }
 }
 
